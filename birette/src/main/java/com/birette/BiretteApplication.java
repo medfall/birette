@@ -1,4 +1,4 @@
-package com.birette.birette;
+package com.birette;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
