@@ -15,11 +15,12 @@ public class HibernateConfig {
 
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() {
-		LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
-		localSessionFactoryBean.setDataSource(dataSource());
-		localSessionFactoryBean.setPackagesToScan(packagesToScan);
-		localSessionFactoryBean.setHibernateProperties(hibernateProperties());
-
+		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+		sessionFactory.setDataSource(dataSource());
+		sessionFactory.setPackagesToScan("com.birette.repository.entity");
+		sessionFactory.setHibernateProperties(hibernateProperties());
+		sessionFactory.setHibernateProperties(hibernateProperties());
+		return sessionFactory;
 	}
 
 	private Properties hibernateProperties() {
