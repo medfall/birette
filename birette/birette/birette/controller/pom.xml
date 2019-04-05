@@ -7,7 +7,9 @@
     <artifactId>birette</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  <groupId>com.birette</groupId>
   <artifactId>controller</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <name>controller</name>
   <url>http://maven.apache.org</url>
   <properties>
