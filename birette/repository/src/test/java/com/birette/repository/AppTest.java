@@ -1,4 +1,4 @@
-package com.birette.repository;
+package org.repository;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
