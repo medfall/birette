@@ -1,13 +1,15 @@
 package com.birette.repository.user;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-
-import com.birette.repository.entity.User;
+import com.birette.repository.entity.UtilisateurEntity;
 
 @Repository
-public interface UtilisateurRepository  extends JpaRepository<User, Long>{
+public interface UtilisateurRepository  extends JpaRepository<UtilisateurEntity, Long>{
 	
-	User findByNom(String nom);
+	UtilisateurEntity findByNom(String nom);
+	List<UtilisateurEntity> findAllUsers();
 
 }

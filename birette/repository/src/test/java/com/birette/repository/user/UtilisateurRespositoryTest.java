@@ -2,17 +2,13 @@ package com.birette.repository.user;
 
 import static org.junit.Assert.assertTrue;
 
-import java.util.List;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import com.birette.repository.entity.User;
 
 @RunWith(SpringRunner.class)
 public class UtilisateurRespositoryTest {
+	/*
 	
 	@Autowired
 	private UtilisateurRepository utilisateurRepository;
@@ -35,6 +31,7 @@ public class UtilisateurRespositoryTest {
 		utilisateurRepository.save(user);
 	}
 	
+	*/
 	@Test
 	public void  testfindUserByName2() {
 		

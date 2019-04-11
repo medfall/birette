@@ -2,11 +2,11 @@ package com.birette.service.user;
 
 import java.util.List;
 
-import com.birette.repository.entity.User;
+import com.birette.service.dto.UtilisateurDto;
 
 
 public interface UserService {
 
-	public List<User> findAllUser ();
+	public List<UtilisateurDto> findAllUser ();
 	
 }
