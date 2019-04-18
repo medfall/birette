@@ -13,8 +13,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
-@Configuration
+//@Configuration
 public class HibernateConfig {
+	/*
 	
 	@Autowired
 	private Environment env;
@@ -47,6 +48,6 @@ public class HibernateConfig {
         System.out.println("## Data Source :"+dataSource);
         return dataSource;
 	}
-	
+	*/
 
 }

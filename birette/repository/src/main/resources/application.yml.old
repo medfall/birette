@@ -1,0 +1,6 @@
+spring.datasource.driverClassName: org.postgresql.Driver
+spring.datasource.url: jdbc:postgresql://localhost:5432/birette
+spring.datasource.username: postqres
+spring.datasource.password: Medzo$0204
+spring.jpa.database-platform
+spring.jpa.show-sql

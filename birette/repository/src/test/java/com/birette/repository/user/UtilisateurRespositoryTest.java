@@ -10,31 +10,43 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class UtilisateurRespositoryTest {
 	/*
 	
+	
+	@Autowired
+	private TestEntityManager entityManager;
+	 
 	@Autowired
 	private UtilisateurRepository utilisateurRepository;
 	
 	@Test
 	public void  testfindUserByName() {
 		
-		List<User> list = utilisateurRepository.findAll();
+		List<UtilisateurEntity> list = utilisateurRepository.findAll();
+		list.stream().forEach(user->{
+			System.out.println(user.getId());
+			System.out.println(user.getNom());
+			System.out.println(user.getPrenom());
+		});
 		assertTrue(list.isEmpty());
-		
 	}
 	
 	@Test
-	public void saveTest() {
-		User user = new User();
-		Long id = new Long(1);
-		user.setId(id);
-		user.setNom("med");
-		user.setPrenom("fall");
-		utilisateurRepository.save(user);
+	public void  SaveUser() {
+		
+		UtilisateurEntity utilisateurEntity = new UtilisateurEntity();
+		utilisateurEntity.setId(3);
+		utilisateurEntity.setNom("test");
+		utilisateurEntity.setPrenom("test1");
+		
+		utilisateurRepository.save(utilisateurEntity);
+		
+		Optional<UtilisateurEntity> found = utilisateurRepository.findById(utilisateurEntity.getId());
+		assertTrue(found.isPresent());
 	}
 	
 	*/
+	
 	@Test
-	public void  testfindUserByName2() {
-		
-      	assertTrue(true);	
+	public void  test() {
+		assertTrue(true);
 	}
 }

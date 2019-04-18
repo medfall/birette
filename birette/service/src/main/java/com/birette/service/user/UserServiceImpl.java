@@ -1,8 +1,6 @@
 package com.birette.service.user;
 
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +24,7 @@ public class  UserServiceImpl  implements UserService {
 
 	@Override
 	public List<UtilisateurDto> findAllUser () {
-		List<UtilisateurEntity> utilisateurEntities = userRepository.findAll();
+		List<UtilisateurEntity> utilisateurEntities = (List<UtilisateurEntity>) userRepository.findAll();
 	    List<UtilisateurDto> utilisateurDtos = utilisateurEntities.stream().map(utilisateurConverter::convertToDTO).collect(Collectors.toList());
 	    return utilisateurDtos;
 	}
