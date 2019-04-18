@@ -28,6 +28,7 @@ public class UtlilisateurController {
 	
 	@ApiOperation("get All Users")
 	@GetMapping(value="/listUsers",produces="application/json")
+	@ApiOperation("get All Users")
 	public List <UtilisateurDto> getAllUser() {
 		LOOGER.debug("Recupérer la liste des utilisateur");
 		List<UtilisateurDto> listUser =  userService.findAllUser();
