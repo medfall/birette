@@ -1,30 +1,32 @@
-package com.birette.service.dto;
+package com.birette.repository.entity;
 
-public class UtilisateurDto {
-	
-	private Long id;
+public class UtilisateurEntity {
+	private long id;
 	private String nom;
 	private String prenom;
 	
-	public Long getId() {
+	
+	public long getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
+	
+	
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
 	public String getPrenom() {
 		return prenom;
 	}
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-	
 	
 
 }
