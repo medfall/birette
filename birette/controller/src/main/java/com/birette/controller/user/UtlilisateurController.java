@@ -12,9 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import com.birette.service.dto.UtilisateurDto;
 import com.birette.service.user.UserService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 
 @RestController
 @RequestMapping("/user")
+@Api(value="User controller")
 public class UtlilisateurController {
 	
 	final Logger LOOGER = LoggerFactory.getLogger(UtlilisateurController.class);
@@ -23,6 +27,7 @@ public class UtlilisateurController {
 	UserService userService;
 	
 	@GetMapping(value="/listUsers",produces="application/json")
+	@ApiOperation("get All Users")
 	public List <UtilisateurDto> getAllUser() {
 		LOOGER.debug("Recupérer la liste des utilisateur");
 		List<UtilisateurDto> listUser =  userService.findAllUser();

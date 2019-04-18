@@ -5,31 +5,33 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity(name="USER")
+@Entity(name="user")
 public class UtilisateurEntity {
 	@Id
 	@GeneratedValue
-	private Long id;
-	
+	@Column(name="id")
+	private long id;
+	@Column(name ="NOM")
 	private String nom;
+	@Column(name ="PRENOM")
 	private String prenom;
 	
-	@Column(name ="ID")
-	public Long getId() {
+	
+	public long getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
-	@Column(name ="NOM")
+	
 	public String getNom() {
 		return nom;
 	}
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	@Column(name ="PRENOM")
+	
 	public String getPrenom() {
 		return prenom;
 	}
