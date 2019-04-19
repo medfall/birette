@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.birette.controller.exception.ResourceNotFoundException;
-import com.birette.repository.entity.UtilisateurEntity;
-import com.birette.service.common.MessageDto;
 import com.birette.service.common.ResponseDto;
 import com.birette.service.dto.UtilisateurDto;
 import com.birette.service.user.UserService;
