@@ -9,7 +9,7 @@
 		<version>2.0.5.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.birette</groupId>
+	<groupId>com.ach.redtool</groupId>
 	<artifactId>birette</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>birette</name>
